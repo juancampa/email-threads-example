@@ -1,0 +1,67 @@
+{
+  "schema": {
+    "types": [
+      {
+        "name": "Root",
+        "actions": [
+          {
+            "name": "run",
+            "type": "Void"
+          },
+          {
+            "name": "email",
+            "type": "Void",
+            "params": [
+              {
+                "name": "replyTo",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "text",
+                "type": "String"
+              },
+              {
+                "name": "from",
+                "type": "String"
+              },
+              {
+                "name": "to",
+                "type": "String"
+              },
+              {
+                "name": "cc",
+                "type": "String"
+              },
+              {
+                "name": "subject",
+                "type": "String"
+              },
+              {
+                "name": "html",
+                "type": "String"
+              },
+              {
+                "name": "id",
+                "type": "String"
+              },
+              {
+                "name": "inReplyTo",
+                "type": "String",
+                "optional": true
+              },
+              {
+                "name": "replyText",
+                "type": "String",
+                "optional": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "email": "sys-email:"
+  }
+}
